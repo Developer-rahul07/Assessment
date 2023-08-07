@@ -139,8 +139,8 @@ body {
 @media screen and (max-width: 600px) {
 
     .container {
-        position: absolute;
-        right: -263px;
+        position: relative;
+        right: -50px;
     }
 
 
