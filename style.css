@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container div {
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.div-1,
+.div-2,
+.div-3,
+.div-4,
+.div-5 {
+    width: 500px;
+}
+
+.div-1 {
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    margin: auto;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid pink;
+    color: green;
+}
+
+.div-2,
+.div-4 {
+    height: 100px;
+    border: 2px solid gray;
+
+}
+
+.div-3 {
+    height: 200px;
+    background-color: rgba(79, 130, 79, 0.529);
+    border: 2px solid green;
+
+}
+
+.div-5 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radioButon {
+    display: block;
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+
+.radioSideText {
+    display: block;
+    position: relative;
+    /* top: 5px; */
+    left: 50px;
+}
+
+.priceOff {
+    display: block;
+    position: relative;
+    bottom: 45px;
+    left: 350px;
+    margin-top: 1px;
+}
+
+.mostPopular {
+
+    left: 325px;
+}
+
+.dropownClassSize {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    /* display: block; */
+    position: relative;
+    bottom: 55px;
+    left: 35px;
+}
+
+.dropownClassSize>span,
+.dropownClassSize>select {
+    margin-bottom: 10px;
+}
+
+.dropownClassColor {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    /* display: block; */
+    position: relative;
+    bottom: 160px;
+    left: 120px;
+}
+
+.dropownClassColor>span,
+.dropownClassColor>select {
+    margin-bottom: 10px;
+}
+
+.buttonClass>input {
+    width: 430px;
+    height: 30px;
+    background-color: green;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 600px) {
+
+    .div-1,
+    .div-2,
+    .div-4,
+    buttonClass>input,
+    .dropownClassColor>span {
+        width: 80%;
+    }
+
+    .div-3 {
+        width: 80%;
+        height: 200px;
+    }
+
+
+    .priceOff {
+        left: 230px;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .div-1,
+    .div-2,
+    .div-4,
+    buttonClass>input,
+    .dropownClassColor>span {
+        width: 50%;
+    }
+
+    .div-3 {
+        width: 50%;
+        height: 200px;
+    }
+
+    .priceOff {
+        left: 250px;
+    }
+
+}
