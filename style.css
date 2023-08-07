@@ -119,7 +119,7 @@ body {
     flex-direction: column;
     width: 70px;
     position: relative;
-    bottom: 160px;
+    bottom: 150px;
     left: 120px;
 }
 
@@ -137,6 +137,12 @@ body {
 /* Media Queries for responsiveness */
 
 @media screen and (max-width: 600px) {
+
+    .container {
+        position: absolute;
+        right: -263px;
+    }
+
 
     .div-1,
     .div-2,
