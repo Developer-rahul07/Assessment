@@ -3,6 +3,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -13,7 +15,7 @@ body {
 
 .container div {
     box-sizing: border-box;
-    margin: 20px;
+    margin: 10px;
 }
 
 .div-1,
@@ -27,9 +29,7 @@ body {
 .div-1 {
     display: flex;
     justify-content: center;
-    /* Center content horizontally */
     align-items: center;
-    /* Center content vertically */
     margin: auto;
     height: 30px;
     background-color: transparent;
@@ -79,15 +79,31 @@ body {
 }
 
 .mostPopular {
-
+    position: relative;
     left: 325px;
+}
+
+.overlineText {
+    text-decoration: line-through;
+    position: relative;
+    bottom: 25px;
+    left: 240px;
+    color: gray;
+    font-size: smaller;
+}
+
+.hashText {
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+    color: rgb(77, 69, 69);
+    font-size: smaller;
 }
 
 .dropownClassSize {
     display: flex;
     flex-direction: column;
     width: 70px;
-    /* display: block; */
     position: relative;
     bottom: 55px;
     left: 35px;
@@ -102,7 +118,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 70px;
-    /* display: block; */
     position: relative;
     bottom: 160px;
     left: 120px;
@@ -128,11 +143,11 @@ body {
     .div-4,
     buttonClass>input,
     .dropownClassColor>span {
-        width: 80%;
+        width: 400px;
     }
 
     .div-3 {
-        width: 80%;
+        width: 400px;
         height: 200px;
     }
 
@@ -140,6 +155,11 @@ body {
     .priceOff {
         left: 230px;
     }
+
+    .overlineText {
+        left: 150px;
+    }
+
 
 }
 
@@ -150,11 +170,11 @@ body {
     .div-4,
     buttonClass>input,
     .dropownClassColor>span {
-        width: 50%;
+        width: 400px;
     }
 
     .div-3 {
-        width: 50%;
+        width: 400px;
         height: 200px;
     }
 
@@ -162,4 +182,7 @@ body {
         left: 250px;
     }
 
+    .overlineText {
+        left: 170px;
+    }
 }
